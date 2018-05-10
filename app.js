@@ -1,14 +1,14 @@
 'use strict';
 
-const debug = require('debug')('egg-passport-github');
+const debug = require('debug')('noprom-egg-passport-github');
 const assert = require('assert');
-const Strategy = require('passport-github').Strategy;
+const Strategy = require('noprom-passport-github').Strategy;
 
 module.exports = app => {
   const config = app.config.passportGithub;
   config.passReqToCallback = true;
-  assert(config.key, '[egg-passport-github] config.passportGithub.key required');
-  assert(config.secret, '[egg-passport-github] config.passportGithub.secret required');
+  assert(config.key, '[noprom-egg-passport-github] config.passportGithub.key required');
+  assert(config.secret, '[noprom-egg-passport-github] config.passportGithub.secret required');
   config.clientID = config.key;
   config.clientSecret = config.secret;
 
