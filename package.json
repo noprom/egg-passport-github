@@ -1,6 +1,6 @@
 {
   "name": "noprom-egg-passport-github",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "github passport plugin for egg",
   "eggPlugin": {
     "name": "passportGithub",
@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "debug": "^2.6.1",
-    "noprom-passport-github": "^1.1.1"
+    "noprom-passport-github": "^1.1.2"
   },
   "devDependencies": {
     "autod": "^2.7.1",
